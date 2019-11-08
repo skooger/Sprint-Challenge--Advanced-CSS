@@ -182,6 +182,29 @@ h1 {
   text-align: center;
   padding: 2%;
   font-size: 4rem;
+  color: red;
+  -webkit-animation-name: example;
+  -webkit-animation-duration: 10s;
+  animation-name: example;
+  animation-duration: 10s;
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+  from {
+    color: red;
+  }
+  to {
+    color: blue;
+  }
+}
+/* Standard syntax */
+@keyframes example {
+  from {
+    color: red;
+  }
+  to {
+    color: blue;
+  }
 }
 nav {
   display: flex;
